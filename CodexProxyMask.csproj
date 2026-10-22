@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A0B3A857-3E50-4A0D-9FC4-8C7D8CB1B0C1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CodexProxyMask</RootNamespace>
+    <AssemblyName>CodexProxyMask</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <StartupObject>CodexProxyMask.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActivityMonitor.cs" />
+    <Compile Include="CodexSessionMonitor.cs" />
+    <Compile Include="FirewallRuleManager.cs" />
+    <Compile Include="HistoryStore.cs" />
+    <Compile Include="MainForm.cs" />
+    <Compile Include="Models.cs" />
+    <Compile Include="ProcessDiscovery.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="SettingsStore.cs" />
+    <Compile Include="SubmissionMonitor.cs" />
+    <Compile Include="TcpConnectionTerminator.cs" />
+    <None Include="app.manifest" />
+  </ItemGroup>
+</Project>
